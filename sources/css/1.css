@@ -1,3 +1,5 @@
+/*  EVERYS  */
+
 
     body{
         text-transform: uppercase;
@@ -9,6 +11,7 @@
         background: linear-gradient(90deg, rgb(13, 0, 255), rgb(105, 85, 151), rgb(0, 140, 255));
         background-size: 300% 300%;
         animation: back 60s infinite;
+        margin: 0;
     }
 
     @keyframes back{
@@ -29,95 +32,98 @@
         margin-top: 10%;
     }
 
-    /*  LINKES  */
+
+/*  LINKES  */
 
 
-        .text{
-            display: flex;
-            align-items: center;
-            align-content: center;
-            margin-left: 20%;
-        }
+    .text{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin-left: 20%;
+    }
 
-        
-        .i{
-            opacity: 0;
-            width: 50px;
-            transition: all 0.5s;
-            margin-left: 40px;
-            animation: 1s link 1s forwards;
-        }
-        .i:hover{
+
+    .i{
+        opacity: 0;
+        width: 50px;
+        transition: all 0.5s;
+        margin-left: 40px;
+        animation: 1s link 1s forwards;
+        margin-bottom: 40px;
+    }
+    .i:hover{
+        transform: translateY(-20px);
+        color: beige;
+    }
+
+
+    .o{
+        width: 50px;
+        margin-left: 20px;
+        opacity: 0;
+        animation: 1s link 1.25s forwards;
+        transition: all 0.5s;
+        margin-bottom: 40px;
+    }
+    .o:hover{
             transform: translateY(-20px);
             color: beige;
-        }
+    }
 
 
-        .o{
-
-            width: 50px;
-            margin-left: 20px;
-            opacity: 0;
-            animation: 1s link 1.25s forwards;
-            transition: all 0.5s;
-        }
-        .o:hover{
-            transform: translateY(-20px);
-            color: beige;
-        }
-
-        /*  ANIMATION   */
-        @keyframes link {
+    /*  ANIMATION   */
+    @keyframes link {
             100%{
                 opacity: 1;
             }
-        }
+    }
 
 
+/*  TÍTULO  */
 
 
-    /*  TÍTULO  */
+    .topo h1{
+        width: 100%;
+        user-select: none;
+        display: inline-flex;
+        justify-content: center;
 
+        color: white;
 
-        h1{
-            width: 100%;
-            user-select: none;
-            display: inline-flex;
-            justify-content: center;
+        text-align: left;
+        letter-spacing: -5px;
+        font-size: 170px;
+        font-weight: 800;
+        line-height: 0.8;
+        margin-top: -20px;
 
-            color: white;
+        animation: 1.5s h1 cubic-bezier(0.175, 0.885, 0.32, 1.1) forwards;
+    }   
 
-            text-align: left;
-            letter-spacing: -5px;
-            font-size: 170px;
-            font-weight: 800;
-            line-height: 0.8;
-            margin: 0;
-
-            animation: 1.5s h1 cubic-bezier(0.175, 0.885, 0.32, 1.1) forwards;
-        }   
-
-        h2{
-            user-select: none;
-            font-family: sans-serif;
-            color: white;
-            opacity: 0;
-            font-size: 35px;
-            animation: 1.5s h2 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.3) forwards;
-        }
-
+    .topo h2{
+        padding-bottom: 40px;
+        user-select: none;
+        font-family: sans-serif;
+        color: white;
+        opacity: 0;
+        font-size: 35px;
+        animation: 1.5s h2 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.3) forwards;
+    }
         
-        p{
-            opacity: 0;
-            user-select: none;
-            margin-left: 47%;
-            color: bisque;
-            font-size:  20px;
-            animation: 1s p 1.75s cubic-bezier(0.175, 0.885, 0.32, 1.3) forwards;
-        }     
+    .topo p{
+        margin-top: -60px;
 
-        /*  ANIMAÇÃO   */
+        opacity: 0;
+        user-select: none;
+        margin-left: 47%;
+        color: bisque;
+        font-size:  20px;
+        animation: 1s p 1.75s cubic-bezier(0.175, 0.885, 0.32, 1.3) forwards;
+    }     
 
+    /*  ANIMAÇÃO   */
+    
         @keyframes h1{
             0%{
                 opacity: 0;
@@ -150,7 +156,32 @@
                 opacity: 1;
             }
         }
+    
 
 
+/*  PROJET  */
 
+
+    .projetos{
+        margin-top: 10%;
+        border-top: 10px rgb(0, 0, 0) dotted;   
+    }
+
+    .projeto{
+        margin-top: -3px;
+        color: white;
+        background-color: black;
+    }
+
+    .img1{
+        width: 600px;
+        margin-left: 50px;
+        border-radius: 40px;
+        margin-top: 50px;
+        transition: all 0.5s;
+    }
+    .img1:hover{
+        scale: 1.05;
+        border-radius: 0;
+    }
 
